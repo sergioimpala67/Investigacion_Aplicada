@@ -1,0 +1,8 @@
+para copiar archivos desde mi PC al otro computador (Putty) usar en cmd o 
+en simbolo de sistema pscp.exe
+ejemplo: pscp C:\User\Sergio\Desktop\Carpeta\ sergio@192.168....:/opt/
+C:Users/Sergio/Desktop>psco.exe C:archivo.zip sergiourzua@10.2.59.35:
+#############################################################################
+Para salir:
+exit
+#############################################################################
