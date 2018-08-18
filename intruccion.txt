@@ -1,0 +1,26 @@
+SCRIPT 1
+#move_protein.py + read_data.py funcionan a la perfeccion. Puede utilizarse manualmente.
+>>>>python move_protein.py archivomesh_protein archivopqr alpharot alphatilt nombre_salida
+MEJORA: AGREGAR OPCION DE AGREGAR DISTANCIA ENTRE PROTEINA Y SENSOR.
+IDEA:
+>>>>python move_protein.py archivomesh archivopqr alpharot alphatilt Distancia nombre_salida
+LISTO y FUNCIONANDO
+
+Orden de Ejecucion:
+1.- SCRIPT2
+#generador_config_file.py
+>>>>python generador_config_file.py Carpeta_principal direccion_pqr_file direccion_protein_mesh_file Tilt_begin Tilt_end Distancia_protein_sensor
+archivos para ejecutar pygbe en Carpeta Script_Ejecucion_1PGBmut
+ejemplo 1:
+>>>>python generador_config_file.py 1PGB 1PGB/1PGB_mut 1PGB/mesh/1PGB_mut_p1.5_d02 0 36 2
+ejemplo 2:
+>>>>python generador_config_file.py 1PGB 1PGB/1PGB_mut 1PGB/mesh/1PGB_mut_p1.5_d02 10 10 2
+
+2.- SCRIPT3
+ejecucion:
+>>>>python conformation_v2su.py Carpeta_principal direccion_pqr_file direccion_protein_mesh_file tilt_begin tilt_end N_tilt Distancia_protein_sensor archivo_salida_datos
+ejemplo 1:
+>>>>python conformation_v2su.py 1PGB 1PGB/1PGB_mut 1PGB/mesh/1PGB_mut_p1.5_d02 0 36 19 2 1PGB_mut_sensor_output 0
+ejemplo 2:
+>>>> python conformation_v3su.py 1PGB 1PGB/1PGB_mut 1PGB/mesh/1PGB_mut_p1.5_d02 10 10 1 2 1PGB_mut_sensor_output 0
+
